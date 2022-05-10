@@ -1,14 +1,14 @@
 class Chronometer {
   constructor() {
     this.currentTime = 0;
-    this.intervalId = null
+    this.intervalId = null;
   }
 
 
   start(callback) {
     this.intervalId = setInterval(() => {
       this.currentTime+=1
-      if (callback)callback()
+      if (printTime)printTime()
       }, 1000)
   }
 
